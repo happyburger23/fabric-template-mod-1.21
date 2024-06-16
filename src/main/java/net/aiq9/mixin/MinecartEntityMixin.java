@@ -8,8 +8,9 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import org.spongepowered.asm.mixin.Mixin;
 
-public class MinecartEntityMixin extends MinecartEntity implements Leashable {
+public abstract class MinecartEntityMixin extends MinecartEntity implements Leashable {
     private Leashable.LeashData leashData;
 
     public MinecartEntityMixin(EntityType<?> entityType, World world) {

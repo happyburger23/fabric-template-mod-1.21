@@ -5,5 +5,5 @@
   "block.template-mod-121.red_mosaic_block": "Red Mosaic Block",
   "block.template-mod-121.blue_mosaic_block": "Blue Mosaic Block",
 
-  "item.template-mod-121": "Test Item"
+  "item.template-mod-121.test_item": "Test Item"
 }
