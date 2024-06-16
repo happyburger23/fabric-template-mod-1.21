@@ -1,0 +1,10 @@
+// 1.21	2024-06-15T17:23:19.678674	Template Mod 1.21/Model Definitions
+d229c5cd8cf508dca260cecb19c49a1be4d00411 assets/template-mod-121/models/item/red_mosaic_block.json
+c1cc71aa8aa82dc9e496fa778d30d103eb171b27 assets/template-mod-121/blockstates/test_block.json
+5b1770c3309173bf118f7d1881b8f1b7449cca51 assets/template-mod-121/blockstates/red_mosaic_block.json
+8ddecd6d8650a0f113cee16f07c91043f9578cf3 assets/template-mod-121/models/block/red_mosaic_block.json
+2655f8cfac120bc8e452d6dc9fc576e73effc09e assets/template-mod-121/models/block/test_block.json
+8564fc07401b204b9acfc6c935effdffb17a8e12 assets/template-mod-121/models/item/test_block.json
+0642ccd4521782fc3752ba016e3f1d1cc0912a1c assets/template-mod-121/blockstates/blue_mosaic_block.json
+a8fee75d92e24418a10cccf3aa7d998a27b16f36 assets/template-mod-121/models/block/blue_mosaic_block.json
+ff9b619e1c8fac6f32c4894690dbb724504476d4 assets/template-mod-121/models/item/blue_mosaic_block.json

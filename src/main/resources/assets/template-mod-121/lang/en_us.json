@@ -1,0 +1,9 @@
+{
+  "itemgroup.template-mod-121": "1.21 Template Mod",
+
+  "block.template-mod-121.test_block": "Test Block",
+  "block.template-mod-121.red_mosaic_block": "Red Mosaic Block",
+  "block.template-mod-121.blue_mosaic_block": "Blue Mosaic Block",
+
+  "item.template-mod-121": "Test Item"
+}
