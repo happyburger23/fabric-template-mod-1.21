@@ -19,6 +19,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.RED_MOSAIC_BLOCK);
                         entries.add(ModBlocks.BLUE_MOSAIC_BLOCK);
 
+                        entries.add(ModItems.TEST_ITEM);
+
                     }).build());
 
     public static void registerItemGroup() {

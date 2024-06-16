@@ -19,6 +19,6 @@ public class TemplateMod121 implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 
 		ModBlocks.registerModBlocks();
-		ModItems.registerItems();
+		ModItems.registerModItems();
 	}
 }

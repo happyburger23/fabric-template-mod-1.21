@@ -7,13 +7,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    private static Item TEST_ITEM;
+    public static final Item TEST_ITEM = new Item(new Item.Settings());
 
-    public static void registerItems() {
-        TEST_ITEM = register("test_item", new Item(new Item.Settings()));
-    }
+    public static void registerModItems() {
+        TemplateMod121.LOGGER.info("Registering Mod Items for " + TemplateMod121.MOD_ID);
 
-    private static Item register(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, name), item);
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "test_item"), TEST_ITEM);
     }
 }

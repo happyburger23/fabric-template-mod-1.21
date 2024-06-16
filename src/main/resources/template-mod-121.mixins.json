@@ -3,7 +3,7 @@
 	"package": "net.aiq9.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin",
+		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
