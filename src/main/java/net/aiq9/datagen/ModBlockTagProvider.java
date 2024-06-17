@@ -20,6 +20,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RED_MOSAIC_BLOCK)
-                .add(ModBlocks.BLUE_MOSAIC_BLOCK);
+                .add(ModBlocks.BLUE_MOSAIC_BLOCK)
+                .add(ModBlocks.COBBLED_SANDSTONE)
+                .add(ModBlocks.CLOUD_STONE)
+                .add(ModBlocks.CLOUD_STONE_BRICKS);
     }
 }

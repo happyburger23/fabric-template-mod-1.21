@@ -18,8 +18,12 @@ public class ModItemGroup {
                         entries.add(ModBlocks.TEST_BLOCK);
                         entries.add(ModBlocks.RED_MOSAIC_BLOCK);
                         entries.add(ModBlocks.BLUE_MOSAIC_BLOCK);
+                        entries.add(ModBlocks.COBBLED_SANDSTONE);
+                        entries.add(ModBlocks.CLOUD_STONE);
+                        entries.add(ModBlocks.CLOUD_STONE_BRICKS);
 
                         entries.add(ModItems.TEST_ITEM);
+                        entries.add(ModItems.TOMATO);
 
                     }).build());
 

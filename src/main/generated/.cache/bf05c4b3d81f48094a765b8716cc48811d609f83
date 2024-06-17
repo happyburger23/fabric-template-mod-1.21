@@ -1,4 +1,7 @@
-// 1.21	2024-06-16T12:23:08.312977	Template Mod 1.21/Block Loot Tables
+// 1.21	2024-06-16T20:42:31.060347	Template Mod 1.21/Block Loot Tables
 54258160de2c873e7dc08b5f9be7a10dac99f172 data/template-mod-121/loot_table/blocks/red_mosaic_block.json
+bf825557e254f10677b7f93f112e211906e8a534 data/template-mod-121/loot_table/blocks/cobbled_sandstone.json
+c45207df3e29f23754d787be402dd21903663b15 data/template-mod-121/loot_table/blocks/cloud_stone_bricks.json
 c3fe033fec3eb5936a658982b2e9a4d4d5d8019a data/template-mod-121/loot_table/blocks/blue_mosaic_block.json
 2edf9110ff3d9743f849c79623fd1c15ad2383f7 data/template-mod-121/loot_table/blocks/test_block.json
+804b4a70413dae535ac6df9391cf051e7e1f53a1 data/template-mod-121/loot_table/blocks/cloud_stone.json

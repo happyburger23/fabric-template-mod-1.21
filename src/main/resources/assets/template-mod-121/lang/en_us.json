@@ -4,6 +4,10 @@
   "block.template-mod-121.test_block": "Test Block",
   "block.template-mod-121.red_mosaic_block": "Red Mosaic Block",
   "block.template-mod-121.blue_mosaic_block": "Blue Mosaic Block",
+  "block.template-mod-121.cobbled_sandstone": "Cobbled Sandstone",
+  "block.template-mod-121.cloud_stone": "Cloud Stone",
+  "block.template-mod-121.cloud_stone_bricks": "Cloud Stone Bricks",
 
-  "item.template-mod-121.test_item": "Test Item"
+  "item.template-mod-121.test_item": "Test Item",
+  "item.template-mod-121.tomato": "Tomato"
 }

@@ -17,5 +17,8 @@ public class ModLoottableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TEST_BLOCK);
         addDrop(ModBlocks.RED_MOSAIC_BLOCK);
         addDrop(ModBlocks.BLUE_MOSAIC_BLOCK);
+        addDrop(ModBlocks.COBBLED_SANDSTONE);
+        addDrop(ModBlocks.CLOUD_STONE);
+        addDrop(ModBlocks.CLOUD_STONE_BRICKS);
     }
 }

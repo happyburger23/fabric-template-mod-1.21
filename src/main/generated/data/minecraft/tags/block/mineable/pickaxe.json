@@ -1,6 +1,9 @@
 {
   "values": [
     "template-mod-121:red_mosaic_block",
-    "template-mod-121:blue_mosaic_block"
+    "template-mod-121:blue_mosaic_block",
+    "template-mod-121:cobbled_sandstone",
+    "template-mod-121:cloud_stone",
+    "template-mod-121:cloud_stone_bricks"
   ]
 }

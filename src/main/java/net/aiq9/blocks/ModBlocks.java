@@ -26,6 +26,20 @@ public class ModBlocks {
                     .requiresTool().strength(0.5f, 0.5f).sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
     public static final Item BLUE_MOSAIC_BLOCK_ITEM = createBlockItem("blue_mosaic_block", BLUE_MOSAIC_BLOCK);
 
+    public static final Block COBBLED_SANDSTONE = registerBlock("cobbled_sandstone",
+            new Block(AbstractBlock.Settings.create().requiresTool().strength(0.5f, 0.5f).sounds(BlockSoundGroup.BASALT)));
+    public static final Item COBBLED_SANDSTONE_ITEM = createBlockItem("cobbled_sandstone", COBBLED_SANDSTONE);
+
+    public static final Block CLOUD_STONE = registerBlock("cloud_stone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().strength(0.5f, 0.5f).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Item CLOUD_STONE_ITEM = createBlockItem("cloud_stone", CLOUD_STONE);
+
+    public static final Block CLOUD_STONE_BRICKS = registerBlock("cloud_stone_bricks",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().strength(0.5f, 0.5f).sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Item CLOUD_STONE_BRICKS_ITEM = createBlockItem("cloud_stone_bricks", CLOUD_STONE_BRICKS);
+
     ///---------------
 
     private static <T extends Block> T registerBlock(String name, T block) {
