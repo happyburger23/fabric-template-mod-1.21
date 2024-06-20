@@ -32,5 +32,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.BEE_GROWABLES)
                 .add(ModBlocks.TUMERIC_CROP)
                 .add(ModBlocks.TOMATO_CROP);
+
+        getOrCreateTagBuilder(BlockTags.RAILS)
+                .add(ModBlocks.NOTE_BLOCK_RAIL);
     }
 }

@@ -25,6 +25,7 @@ public class ModLoottableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.COBBLED_SANDSTONE);
         addDrop(ModBlocks.CLOUD_STONE);
         addDrop(ModBlocks.CLOUD_STONE_BRICKS);
+        addDrop(ModBlocks.NOTE_BLOCK_RAIL);
 
         BlockStatePropertyLootCondition.Builder tomatoBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.TOMATO_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(TomatoCropBlock.AGE, 5));

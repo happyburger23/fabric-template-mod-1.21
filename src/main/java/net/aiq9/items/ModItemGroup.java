@@ -22,6 +22,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CLOUD_STONE);
                         entries.add(ModBlocks.CLOUD_STONE_BRICKS);
 
+                        entries.add(ModBlocks.NOTE_BLOCK_RAIL);
+
                         entries.add(ModItems.TEST_ITEM);
                         entries.add(ModItems.TUMERIC);
                         entries.add(ModItems.TUMERIC_SEEDS);

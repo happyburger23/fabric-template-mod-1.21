@@ -1,6 +1,7 @@
 package net.aiq9.blocks;
 
 import net.aiq9.TemplateMod121;
+import net.aiq9.blocks.custom.NoteBlockRailBlock;
 import net.aiq9.blocks.custom.TomatoCropBlock;
 import net.aiq9.blocks.custom.TumericCropBlock;
 import net.minecraft.block.AbstractBlock;
@@ -44,6 +45,10 @@ public class ModBlocks {
     public static final Block TOMATO_CROP = registerBlock("tomato_crop",
             new TomatoCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     public static final Item TOMATO_CROP_ITEM = createBlockItem("tomato_crop", TOMATO_CROP);
+
+    public static final Block NOTE_BLOCK_RAIL = registerBlock("note_block_rail",
+            new NoteBlockRailBlock(AbstractBlock.Settings.copy(Blocks.RAIL)));
+    public static final Item NOTE_BLOCK_RAIL_ITEM = createBlockItem("note_block_rail", NOTE_BLOCK_RAIL);
 
     ///---------------
 

@@ -26,6 +26,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.TUMERIC_CROP, TumericCropBlock.AGE, 0, 1);
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+
+        blockStateModelGenerator.registerStraightRail(ModBlocks.NOTE_BLOCK_RAIL);
     }
 
     @Override
