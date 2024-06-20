@@ -23,7 +23,11 @@ public class ModItemGroup {
                         entries.add(ModBlocks.CLOUD_STONE_BRICKS);
 
                         entries.add(ModItems.TEST_ITEM);
+                        entries.add(ModItems.TUMERIC);
+                        entries.add(ModItems.TUMERIC_SEEDS);
+
                         entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.TOMATO_SEEDS);
 
                     }).build());
 

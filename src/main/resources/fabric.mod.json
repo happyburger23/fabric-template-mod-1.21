@@ -18,6 +18,9 @@
 		"main": [
 			"net.aiq9.TemplateMod121"
 		],
+		"client": [
+			"net.aiq9.TemplateMod121Client"
+		],
 		"fabric-datagen": [
 			"net.aiq9.TemplateMod121DataGenerator"
 		]

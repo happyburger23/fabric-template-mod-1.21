@@ -24,5 +24,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBBLED_SANDSTONE)
                 .add(ModBlocks.CLOUD_STONE)
                 .add(ModBlocks.CLOUD_STONE_BRICKS);
+
+        getOrCreateTagBuilder(BlockTags.CROPS)
+                .add(ModBlocks.TUMERIC_CROP)
+                .add(ModBlocks.TOMATO_CROP);
+
+        getOrCreateTagBuilder(BlockTags.BEE_GROWABLES)
+                .add(ModBlocks.TUMERIC_CROP)
+                .add(ModBlocks.TOMATO_CROP);
     }
 }

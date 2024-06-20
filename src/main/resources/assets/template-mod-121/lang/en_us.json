@@ -9,5 +9,10 @@
   "block.template-mod-121.cloud_stone_bricks": "Cloud Stone Bricks",
 
   "item.template-mod-121.test_item": "Test Item",
-  "item.template-mod-121.tomato": "Tomato"
+
+  "item.template-mod-121.tomato": "Tomato",
+  "item.template-mod-121.tomato_seeds": "Tomato Seeds",
+
+  "item.template-mod-121.tumeric": "Tumeric",
+  "item.template-mod-121.tumeric_seeds": "Tumeric Seeds"
 }
