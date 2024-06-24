@@ -1,18 +1,16 @@
 package net.aiq9.datagen;
 
 import net.aiq9.blocks.ModBlocks;
+import net.aiq9.blocks.ModCropBlocks;
 import net.aiq9.blocks.custom.TomatoCropBlock;
 import net.aiq9.blocks.custom.TumericCropBlock;
 import net.aiq9.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
 
-public class ModModelProvider extends FabricModelProvider {
-    public ModModelProvider(FabricDataOutput output) {
+public class BlockItemModelDatagen extends FabricModelProvider {
+    public BlockItemModelDatagen(FabricDataOutput output) {
         super(output);
     }
 
@@ -36,13 +34,17 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADOBE_BRICK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.REFRACTORY_BRICK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STURDY_BRICK_BLOCK);
-
-        blockStateModelGenerator.registerCrop(ModBlocks.TUMERIC_CROP, TumericCropBlock.AGE, 0, 1);
-        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
-
         blockStateModelGenerator.registerStraightRail(ModBlocks.NOTE_BLOCK_RAIL);
 
         blockStateModelGenerator.registerSingleton(ModBlocks.CARDBOARD_BOX, TexturedModel.CUBE_BOTTOM_TOP);
+        //blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.CARDBOARD_BOX, , TextureMap::frontSideWithCustomBottom);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAD_ORE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LEAD_BLOCK);
+
+        blockStateModelGenerator.registerCrop(ModCropBlocks.TUMERIC_CROP, TumericCropBlock.AGE, 0, 1);
+        blockStateModelGenerator.registerCrop(ModCropBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModCropBlocks.COTTON_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override
@@ -60,5 +62,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.STURDY_CLAY_BALL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STURDY_BRICK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.COTTON, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LEAD_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_LEAD, Models.GENERATED);
     }
 }

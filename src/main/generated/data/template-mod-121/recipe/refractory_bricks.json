@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "r": {
+      "item": "template-mod-121:refractory_brick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "rr ",
+    "rr "
+  ],
+  "result": {
+    "count": 4,
+    "id": "template-mod-121:refractory_bricks"
+  }
+}

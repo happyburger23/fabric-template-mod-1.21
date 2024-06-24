@@ -31,6 +31,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.STURDY_BRICK_BLOCK);
 
                         entries.add(ModBlocks.CARDBOARD_BOX);
+                        entries.add(ModBlocks.LEAD_ORE_BLOCK);
+                        entries.add(ModBlocks.LEAD_BLOCK);
 
                         entries.add(ModBlocks.NOTE_BLOCK_RAIL);
 
@@ -49,6 +51,12 @@ public class ModItemGroup {
 
                         entries.add(ModItems.STURDY_CLAY_BALL);
                         entries.add(ModItems.STURDY_BRICK);
+
+                        entries.add(ModItems.COTTON);
+                        entries.add(ModItems.COTTON_SEEDS);
+
+                        entries.add(ModItems.LEAD_INGOT);
+                        entries.add(ModItems.RAW_LEAD);
 
                     }).build());
 

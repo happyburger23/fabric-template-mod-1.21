@@ -1,4 +1,4 @@
-// 1.21	2024-06-23T21:32:01.251169	Template Mod 1.21/Block Loot Tables
+// 1.21	2024-06-24T10:32:51.78691	Template Mod 1.21/Block Loot Tables
 cd3046698db28ddd922015fa3d35531f066da31d data/template-mod-121/loot_table/blocks/test_falling_block.json
 201d18760d3ed00dfeb25f8f134fc2b9791f654e data/template-mod-121/loot_table/blocks/cardboard_box.json
 54258160de2c873e7dc08b5f9be7a10dac99f172 data/template-mod-121/loot_table/blocks/red_mosaic_block.json
@@ -7,9 +7,11 @@ c45207df3e29f23754d787be402dd21903663b15 data/template-mod-121/loot_table/blocks
 c3fe033fec3eb5936a658982b2e9a4d4d5d8019a data/template-mod-121/loot_table/blocks/blue_mosaic_block.json
 bf825557e254f10677b7f93f112e211906e8a534 data/template-mod-121/loot_table/blocks/cobbled_sandstone.json
 ca2bf0b6a816aa8c5ea27c7df371613695b130e6 data/template-mod-121/loot_table/blocks/wooden_casement.json
+9855f9f86391ceb54de59eb251f65bdfe4329a45 data/template-mod-121/loot_table/blocks/cotton_crop.json
 05e15ed30efd72da636cb4e2df8feaae7a616fc6 data/template-mod-121/loot_table/blocks/adobe_bricks.json
 2edf9110ff3d9743f849c79623fd1c15ad2383f7 data/template-mod-121/loot_table/blocks/test_block.json
 69e0df70e103b13f2bc77d0d24f49ee39bfcf906 data/template-mod-121/loot_table/blocks/rotten_flesh_block.json
+c57aa7eb95ec8ce5de903a52fa1a63fbd44054aa data/template-mod-121/loot_table/blocks/lead_block.json
 804b4a70413dae535ac6df9391cf051e7e1f53a1 data/template-mod-121/loot_table/blocks/cloud_stone.json
 e5685df7d8705c0916c69998e2a6baaea3ace5b0 data/template-mod-121/loot_table/blocks/note_block_rail.json
 f61f8cdb1ca39e8558c52e887efab75e7fed55d1 data/template-mod-121/loot_table/blocks/sturdy_bricks.json

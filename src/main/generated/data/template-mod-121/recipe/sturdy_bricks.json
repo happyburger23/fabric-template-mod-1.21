@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "template-mod-121:sturdy_brick"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ss ",
+    "ss "
+  ],
+  "result": {
+    "count": 4,
+    "id": "template-mod-121:sturdy_bricks"
+  }
+}

@@ -1,6 +1,7 @@
 package net.aiq9.datagen;
 
 import net.aiq9.blocks.ModBlocks;
+import net.aiq9.blocks.ModCropBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -8,8 +9,8 @@ import net.minecraft.registry.tag.BlockTags;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
-    public ModBlockTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class BlockTagDatagen extends FabricTagProvider.BlockTagProvider {
+    public BlockTagDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
@@ -29,18 +30,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NOTE_BLOCK_RAIL)
                 .add(ModBlocks.ADOBE_BRICK_BLOCK)
                 .add(ModBlocks.REFRACTORY_BRICK_BLOCK)
-                .add(ModBlocks.STURDY_BRICK_BLOCK);
+                .add(ModBlocks.STURDY_BRICK_BLOCK)
+                .add(ModBlocks.LEAD_ORE_BLOCK)
+                .add(ModBlocks.LEAD_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.ROTTEN_FLESH_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.CROPS)
-                .add(ModBlocks.TUMERIC_CROP)
-                .add(ModBlocks.TOMATO_CROP);
+                .add(ModCropBlocks.TUMERIC_CROP)
+                .add(ModCropBlocks.TOMATO_CROP)
+                .add(ModCropBlocks.COTTON_CROP);
 
         getOrCreateTagBuilder(BlockTags.BEE_GROWABLES)
-                .add(ModBlocks.TUMERIC_CROP)
-                .add(ModBlocks.TOMATO_CROP);
+                .add(ModCropBlocks.TUMERIC_CROP)
+                .add(ModCropBlocks.TOMATO_CROP)
+                .add(ModCropBlocks.COTTON_CROP);
 
         getOrCreateTagBuilder(BlockTags.RAILS)
                 .add(ModBlocks.NOTE_BLOCK_RAIL);

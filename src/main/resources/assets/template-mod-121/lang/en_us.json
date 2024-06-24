@@ -12,12 +12,13 @@
   "block.template-mod-121.note_block_rail": "Note Block Rail",
   "block.template-mod-121.test_falling_block": "Test Falling Block",
   "block.template-mod-121.rotten_flesh_block": "Rotten Flesh Block",
-
   "block.template-mod-121.adobe_bricks": "Adobe Bricks",
   "block.template-mod-121.refractory_bricks": "Refractory Bricks",
   "block.template-mod-121.sturdy_bricks": "Sturdy Bricks",
-
   "block.template-mod-121.cardboard_box": "Cardboard Box",
+
+  "block.template-mod-121.lead_ore_block": "Lead Ore",
+  "block.template-mod-121.lead_block": "Block of Lead",
 
   "item.template-mod-121.test_item": "Test Item",
   "item.template-mod-121.tomato": "Tomato",
@@ -32,6 +33,12 @@
   "item.template-mod-121.refractory_clay_ball": "Refractory Clay Ball",
   "item.template-mod-121.refractory_brick": "Refractory Brick",
 
-  "item.template-mod-121.sturdy_clay_ball": "Study Clay Ball",
-  "item.template-mod-121.sturdy_brick": "Sturdy Brick"
+  "item.template-mod-121.sturdy_clay_ball": "Sturdy Clay Ball",
+  "item.template-mod-121.sturdy_brick": "Sturdy Brick",
+
+  "item.template-mod-121.cotton": "Cotton",
+  "item.template-mod-121.cotton_seeds": "Cotton Seeds",
+
+  "item.template-mod-121.lead_ingot": "Lead Ingot",
+  "item.template-mod-121.raw_lead": "Raw Lead"
 }

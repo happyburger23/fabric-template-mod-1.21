@@ -1,5 +1,6 @@
 package net.aiq9;
 
+import net.aiq9.blocks.ModCropBlocks;
 import net.aiq9.blocks.ModBlocks;
 import net.aiq9.items.ModItemGroup;
 import net.aiq9.items.ModItems;
@@ -19,6 +20,8 @@ public class TemplateMod121 implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 
 		ModBlocks.registerModBlocks();
+		ModCropBlocks.registerModCropBlocks();
+
 		ModItems.registerModItems();
 	}
 }

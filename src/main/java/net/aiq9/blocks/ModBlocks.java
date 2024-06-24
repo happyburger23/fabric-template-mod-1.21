@@ -7,7 +7,9 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block TEST_BLOCK = registerBlock("test_block",
@@ -33,14 +35,6 @@ public class ModBlocks {
     public static final Block CLOUD_STONE_BRICKS = registerBlock("cloud_stone_bricks",
             new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
     public static final Item CLOUD_STONE_BRICKS_ITEM = createBlockItem("cloud_stone_bricks", CLOUD_STONE_BRICKS);
-
-    public static final Block TUMERIC_CROP = registerBlock("tumeric_crop",
-            new TumericCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
-    public static final Item TUMERIC_CROP_ITEM = createBlockItem("tumeric_crop", TUMERIC_CROP);
-
-    public static final Block TOMATO_CROP = registerBlock("tomato_crop",
-            new TomatoCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
-    public static final Item TOMATO_CROP_ITEM = createBlockItem("tomato_crop", TOMATO_CROP);
 
     public static final Block NOTE_BLOCK_RAIL = registerBlock("note_block_rail",
             new NoteBlockRailBlock(AbstractBlock.Settings.copy(Blocks.RAIL)));
@@ -76,8 +70,17 @@ public class ModBlocks {
     public static final Item STURDY_BRICK_BLOCK_ITEM = createBlockItem("sturdy_bricks", STURDY_BRICK_BLOCK);
 
     public static final Block CARDBOARD_BOX = registerBlock("cardboard_box",
-            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL)));
+            new BarrelBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.LADDER)));
     public static final Item CARDBOARD_BOX_ITEM = createBlockItem("cardboard_box", CARDBOARD_BOX);
+
+    public static final Block LEAD_ORE_BLOCK = registerBlock("lead_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5), AbstractBlock.Settings.copy(Blocks.GOLD_ORE)));
+    public static final Item LEAD_ORE_BLOCK_ITEM = createBlockItem("lead_ore", LEAD_ORE_BLOCK);
+
+    public static final Block LEAD_BLOCK = registerBlock("lead_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.GOLD_BLOCK)));
+    public static final Item LEAD_BLOCK_ITEM = createBlockItem("lead_block", LEAD_BLOCK);
+
 
     ///---------------
 

@@ -1,7 +1,7 @@
-// 1.21	2024-06-23T21:32:01.252626	Template Mod 1.21/Tags for minecraft:block
-c1703a32ea223fa71f7612c874d0d5262cdef19c data/minecraft/tags/block/crops.json
+// 1.21	2024-06-24T10:32:51.787371	Template Mod 1.21/Tags for minecraft:block
+401cc905df44fe13fb79bd6a64abbc241c29c7af data/minecraft/tags/block/crops.json
+f62a35edee2793618fb3a0319203bb4bb2cb44b0 data/minecraft/tags/block/mineable/pickaxe.json
 838d226c1063edd73f172f52ed15867c1e2252ad data/minecraft/tags/block/rails.json
-8b5c2a0a8f9f3f346470e5e9afec68ca690b485e data/minecraft/tags/block/mineable/pickaxe.json
-f70a994f4e218ad4de5307945ee0113ca01da726 data/minecraft/tags/block/mineable/hoe.json
 f3644c1e8fc45399c9017abf2deb487d30cfd9d7 data/minecraft/tags/block/mineable/axe.json
-c1703a32ea223fa71f7612c874d0d5262cdef19c data/minecraft/tags/block/bee_growables.json
+f70a994f4e218ad4de5307945ee0113ca01da726 data/minecraft/tags/block/mineable/hoe.json
+401cc905df44fe13fb79bd6a64abbc241c29c7af data/minecraft/tags/block/bee_growables.json

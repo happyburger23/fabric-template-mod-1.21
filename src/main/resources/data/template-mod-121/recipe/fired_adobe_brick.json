@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "template-mod-121:unfired_adobe_brick"
+  },
+  "result": {
+    "id": "template-mod-121:fired_adobe_brick"
+  }
+}
