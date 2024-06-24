@@ -1,0 +1,21 @@
+// 1.21	2024-06-24T10:32:51.785681	Template Mod 1.21/Recipes
+1feaf01765307c37e173da1563d56891590e6b98 data/template-mod-121/recipe/refractory_bricks.json
+9baff7fada78e7eb1ae44cd58f47ea10a1eb216b data/template-mod-121/recipe/sturdy_bricks.json
+f262a5463ef397922ce282797f612f896fd31e98 data/template-mod-121/advancement/recipes/building_blocks/sturdy_bricks.json
+c9b4d6d850ed7454d31f9843167c6682a99b2bc1 data/template-mod-121/advancement/recipes/redstone/note_block_rail.json
+92024def0e3906a330f5f16416cb97921d9ec8d4 data/template-mod-121/advancement/recipes/building_blocks/refractory_bricks.json
+fa1dca82a4aae69f594750ce436fc373e4e2f11f data/template-mod-121/recipe/rotten_flesh.json
+76fa955f50f3eceb6d5a80c8878ac5970ebd68e7 data/template-mod-121/advancement/recipes/building_blocks/adobe_bricks.json
+76dfe6bb53e25ea10cb9d741a4d670e96499a683 data/template-mod-121/recipe/note_block_rail.json
+31320d9b885d33737b7dc1f1a5b85918f1de8567 data/template-mod-121/advancement/recipes/building_blocks/rotten_flesh.json
+1fb46a8a8166af559749932883cb5aa33cd6748a data/template-mod-121/recipe/unfired_adobe_brick.json
+374d507c75c1e4bb472a2b45793bb4898d8247ad data/template-mod-121/recipe/adobe_bricks.json
+b2d508521f59932c813063d762abcf3da6c576f8 data/template-mod-121/recipe/wooden_casement_pane.json
+01dd7920c0cc6a0c4824f2935355984a1fdd3753 data/template-mod-121/advancement/recipes/building_blocks/wooden_casement_pane.json
+a24b10a79fa428139da97356b28607346f381128 data/template-mod-121/recipe/wooden_casement.json
+2e3f48631de6c1b80308130a2c5e1702429d406b data/template-mod-121/advancement/recipes/building_blocks/wooden_casement.json
+eba4d1ccb172b959bc68ba179c5c32bfe5948779 data/template-mod-121/advancement/recipes/decorations/rotten_flesh_block.json
+60dbc4085e0bf9f02ce64043aacf362ea6a217b9 data/template-mod-121/advancement/recipes/tools/cloud_stone_bricks.json
+f4014eef16d52b79bcfc16165821620a3958ab68 data/template-mod-121/recipe/rotten_flesh_block.json
+e53f6bb49ff4721df5033521f6153a7cd1139cf9 data/template-mod-121/recipe/cloud_stone_bricks.json
+d7efbe4be1257d2b3f09b0f0055a6befc2aa6d12 data/template-mod-121/advancement/recipes/misc/unfired_adobe_brick.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_adobe_ball": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:adobe_ball"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:unfired_adobe_brick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_adobe_ball"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:unfired_adobe_brick"
+    ]
+  }
+}
