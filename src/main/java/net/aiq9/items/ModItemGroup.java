@@ -21,15 +21,34 @@ public class ModItemGroup {
                         entries.add(ModBlocks.COBBLED_SANDSTONE);
                         entries.add(ModBlocks.CLOUD_STONE);
                         entries.add(ModBlocks.CLOUD_STONE_BRICKS);
+                        entries.add(ModBlocks.WOODEN_CASEMENT);
+                        entries.add(ModBlocks.WOODEN_CASEMENT_PANE);
+                        entries.add(ModBlocks.TEST_FALLING_BLOCK);
+                        entries.add(ModBlocks.ROTTEN_FLESH_BLOCK);
+
+                        entries.add(ModBlocks.ADOBE_BRICK_BLOCK);
+                        entries.add(ModBlocks.REFRACTORY_BRICK_BLOCK);
+                        entries.add(ModBlocks.STURDY_BRICK_BLOCK);
+
+                        entries.add(ModBlocks.CARDBOARD_BOX);
 
                         entries.add(ModBlocks.NOTE_BLOCK_RAIL);
 
                         entries.add(ModItems.TEST_ITEM);
                         entries.add(ModItems.TUMERIC);
                         entries.add(ModItems.TUMERIC_SEEDS);
-
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.TOMATO_SEEDS);
+
+                        entries.add(ModItems.ADOBE_BALL);
+                        entries.add(ModItems.UNFIRED_ADOBE_BRICK);
+                        entries.add(ModItems.FIRED_ADOBE_BRICK);
+
+                        entries.add(ModItems.REFRACTORY_CLAY_BALL);
+                        entries.add(ModItems.REFRACTORY_BRICK);
+
+                        entries.add(ModItems.STURDY_CLAY_BALL);
+                        entries.add(ModItems.STURDY_BRICK);
 
                     }).build());
 

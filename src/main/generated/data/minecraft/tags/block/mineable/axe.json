@@ -1,5 +1,7 @@
 {
   "values": [
-    "template-mod-121:test_block"
+    "template-mod-121:test_block",
+    "template-mod-121:wooden_casement",
+    "template-mod-121:wooden_casement_pane"
   ]
 }

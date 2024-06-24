@@ -16,14 +16,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(ModBlocks.TEST_BLOCK);
+                .add(ModBlocks.TEST_BLOCK)
+                .add(ModBlocks.WOODEN_CASEMENT)
+                .add(ModBlocks.WOODEN_CASEMENT_PANE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RED_MOSAIC_BLOCK)
                 .add(ModBlocks.BLUE_MOSAIC_BLOCK)
                 .add(ModBlocks.COBBLED_SANDSTONE)
                 .add(ModBlocks.CLOUD_STONE)
-                .add(ModBlocks.CLOUD_STONE_BRICKS);
+                .add(ModBlocks.CLOUD_STONE_BRICKS)
+                .add(ModBlocks.NOTE_BLOCK_RAIL)
+                .add(ModBlocks.ADOBE_BRICK_BLOCK)
+                .add(ModBlocks.REFRACTORY_BRICK_BLOCK)
+                .add(ModBlocks.STURDY_BRICK_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.ROTTEN_FLESH_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.CROPS)
                 .add(ModBlocks.TUMERIC_CROP)

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "template-mod-121:block/refractory_bricks"
+  }
+}

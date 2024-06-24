@@ -4,6 +4,10 @@
     "template-mod-121:blue_mosaic_block",
     "template-mod-121:cobbled_sandstone",
     "template-mod-121:cloud_stone",
-    "template-mod-121:cloud_stone_bricks"
+    "template-mod-121:cloud_stone_bricks",
+    "template-mod-121:note_block_rail",
+    "template-mod-121:adobe_bricks",
+    "template-mod-121:refractory_bricks",
+    "template-mod-121:sturdy_bricks"
   ]
 }
