@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:template-mod-121/begin_mosaic",
+  "criteria": {
+    "got_blue_mosaic": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:blue_mosaic_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain Blue Mosaic",
+    "icon": {
+      "count": 1,
+      "id": "template-mod-121:blue_mosaic_block"
+    },
+    "title": "Feeling Blue"
+  },
+  "requirements": [
+    [
+      "got_blue_mosaic"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

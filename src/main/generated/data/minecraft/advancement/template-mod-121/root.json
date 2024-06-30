@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_test_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:test_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "template-mod-121:textures/block/test_block.png",
+    "description": "ADVANCEMENT TREE BEGUN",
+    "icon": {
+      "count": 1,
+      "id": "template-mod-121:test_block"
+    },
+    "title": "Advancing Through The Years"
+  },
+  "requirements": [
+    [
+      "got_test_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

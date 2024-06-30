@@ -1,8 +1,8 @@
 package net.aiq9.blocks;
 
 import net.aiq9.TemplateMod121;
-import net.aiq9.blocks.custom.TomatoCropBlock;
-import net.aiq9.blocks.custom.TumericCropBlock;
+import net.aiq9.blocks.custom.crop.TomatoCropBlock;
+import net.aiq9.blocks.custom.crop.TumericCropBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

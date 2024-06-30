@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:template-mod-121/root",
+  "criteria": {
+    "has_note_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:note_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain a Note Block",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:note_block"
+    },
+    "title": "Make Some Noise!"
+  },
+  "requirements": [
+    [
+      "has_note_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

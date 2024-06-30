@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_refractory_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:refractory_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "template-mod-121:refractory_bricks_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_refractory_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "template-mod-121:refractory_bricks_wall"
+    ]
+  }
+}

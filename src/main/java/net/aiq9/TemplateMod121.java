@@ -1,9 +1,12 @@
 package net.aiq9;
 
+import net.aiq9.blocks.ModPlantBlocks;
 import net.aiq9.blocks.ModCropBlocks;
 import net.aiq9.blocks.ModBlocks;
+import net.aiq9.blocks.ModWallBlocks;
 import net.aiq9.items.ModItemGroup;
 import net.aiq9.items.ModItems;
+import net.aiq9.sounds.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,10 +21,11 @@ public class TemplateMod121 implements ModInitializer {
 		LOGGER.info("Initializing Template Mod");
 
 		ModItemGroup.registerItemGroup();
-
 		ModBlocks.registerModBlocks();
+		ModWallBlocks.registerModWallBlocks();
 		ModCropBlocks.registerModCropBlocks();
-
+		ModPlantBlocks.registerModPlantBlocks();
 		ModItems.registerModItems();
+		ModSounds.registerModSounds();
 	}
 }

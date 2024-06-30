@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:template-mod-121/got_jukebox",
+  "criteria": {
+    "has_sound_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:sound_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain a Sound Block",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "template-mod-121:sound_block"
+    },
+    "title": "Fancy Noise Maker"
+  },
+  "requirements": [
+    [
+      "has_sound_block"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

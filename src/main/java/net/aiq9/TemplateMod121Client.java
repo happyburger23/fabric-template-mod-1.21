@@ -1,6 +1,7 @@
 package net.aiq9;
 
 import net.aiq9.blocks.ModBlocks;
+import net.aiq9.blocks.ModPlantBlocks;
 import net.aiq9.blocks.ModCropBlocks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -16,5 +17,11 @@ public class TemplateMod121Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NOTE_BLOCK_RAIL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WOODEN_CASEMENT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WOODEN_CASEMENT_PANE, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModPlantBlocks.THISTLE_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModPlantBlocks.POTTED_THISTLE_BLOCK, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModPlantBlocks.MONKSHOOD_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModPlantBlocks.POTTED_MONKSHOOD_BLOCK, RenderLayer.getCutout());
     }
 }

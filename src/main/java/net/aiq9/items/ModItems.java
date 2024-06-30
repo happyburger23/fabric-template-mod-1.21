@@ -1,8 +1,9 @@
 package net.aiq9.items;
 
 import net.aiq9.TemplateMod121;
-import net.aiq9.blocks.ModBlocks;
 import net.aiq9.blocks.ModCropBlocks;
+import net.aiq9.items.custom.FireStoneItem;
+import net.aiq9.items.custom.MetalDetectorItem;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,11 +11,10 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item TEST_ITEM = new Item(new Item.Settings());
-    public static final Item TUMERIC = new Item(new Item.Settings());
+    public static final Item TUMERIC = new Item(new Item.Settings().food(ModFoodComponents.TUMERIC));
     public static final Item TUMERIC_SEEDS = new AliasedBlockItem(ModCropBlocks.TUMERIC_CROP, new Item.Settings());
 
-    public static final Item TOMATO = new Item(new Item.Settings());
+    public static final Item TOMATO = new Item(new Item.Settings().food(ModFoodComponents.TOMATO));
     public static final Item TOMATO_SEEDS = new AliasedBlockItem(ModCropBlocks.TOMATO_CROP, new Item.Settings());
 
     public static final Item ADOBE_BALL = new Item(new Item.Settings());
@@ -33,10 +33,16 @@ public class ModItems {
     public static final Item LEAD_INGOT = new Item(new Item.Settings());
     public static final Item RAW_LEAD = new Item(new Item.Settings());
 
+    public static final Item RUBY = new Item(new Item.Settings());
+    public static final Item RAW_RUBY = new Item(new Item.Settings());
+
+    public static final Item FIRE_STONE = new FireStoneItem(new Item.Settings().maxCount(1));
+    public static final Item OIL_BUCKET = new Item(new Item.Settings().maxCount(1)); //turn into BucketItem later.
+    public static final Item METAL_DETECTOR = new MetalDetectorItem(new Item.Settings().maxCount(1));
+
     public static void registerModItems() {
         TemplateMod121.LOGGER.info("Registering Mod Items for " + TemplateMod121.MOD_ID);
 
-        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "test_item"), TEST_ITEM);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "tumeric"), TUMERIC);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "tumeric_seeds"), TUMERIC_SEEDS);
 
@@ -53,11 +59,17 @@ public class ModItems {
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "sturdy_brick"), STURDY_BRICK);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "sturdy_clay_ball"), STURDY_CLAY_BALL);
 
-
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "cotton"), COTTON);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "cotton_seeds"), COTTON_SEEDS);
 
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "lead_ingot"), LEAD_INGOT);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "raw_lead"), RAW_LEAD);
+
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "ruby"), RUBY);
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "raw_ruby"), RAW_RUBY);
+
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "fire_stone"), FIRE_STONE);
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "oil_bucket"), OIL_BUCKET);
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "metal_detector"), METAL_DETECTOR);
     }
 }

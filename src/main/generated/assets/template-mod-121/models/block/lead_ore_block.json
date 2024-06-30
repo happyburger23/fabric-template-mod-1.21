@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "template-mod-121:block/lead_ore_block"
-  }
-}

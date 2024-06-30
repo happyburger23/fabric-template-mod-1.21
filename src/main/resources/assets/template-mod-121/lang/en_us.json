@@ -12,19 +12,56 @@
   "block.template-mod-121.note_block_rail": "Note Block Rail",
   "block.template-mod-121.test_falling_block": "Test Falling Block",
   "block.template-mod-121.rotten_flesh_block": "Rotten Flesh Block",
+  "block.template-mod-121.cardboard_box": "Cardboard Box",
+  "block.template-mod-121.sound_block": "Sound Block",
+
   "block.template-mod-121.adobe_bricks": "Adobe Bricks",
   "block.template-mod-121.refractory_bricks": "Refractory Bricks",
   "block.template-mod-121.sturdy_bricks": "Sturdy Bricks",
-  "block.template-mod-121.cardboard_box": "Cardboard Box",
 
-  "block.template-mod-121.lead_ore_block": "Lead Ore",
+  "block.template-mod-121.thistle": "Thistle",
+  "block.template-mod-121.potted_thistle": "Potted Thistle",
+
+  "block.template-mod-121.monkshood": "Monkshood",
+  "block.template-mod-121.potted_monkshood": "Potted Monkshood",
+
+  "block.template-mod-121.cobbled_sandstone_wall": "Cobbled Sandstone Wall",
+  "block.template-mod-121.cloud_stone_bricks_wall": "Cloud Stone Wall",
+  "block.template-mod-121.adobe_bricks_wall": "Adobe Bricks Wall",
+  "block.template-mod-121.refractory_bricks_wall": "Refractory Bricks Wall",
+  "block.template-mod-121.sturdy_bricks_wall": "Sturdy Bricks Wall",
+
+  "block.template-mod-121.lead_ore": "Lead Ore",
+  "block.template-mod-121.deepslate_lead_ore": "Deepslate Lead Ore",
   "block.template-mod-121.lead_block": "Block of Lead",
+  "block.template-mod-121.raw_lead_block": "Raw Block of Lead",
+
+  "block.template-mod-121.ruby_ore": "Ruby Ore",
+  "block.template-mod-121.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.template-mod-121.nether_ruby_ore": "Nether Ruby Ore",
+  "block.template-mod-121.end_ruby_ore": "End Ruby Ore",
+  "block.template-mod-121.ruby_block": "Block of Ruby",
+  "block.template-mod-121.raw_ruby_block": "Block of Raw Ruby",
+
+  "block.template-mod-121.slade": "Slade",
+  "block.template-mod-121.slade_bricks": "Slade Bricks",
+  "block.template-mod-121.chiseled_slade": "Chiseled Slade",
+
+  "block.template-mod-121.alabaster": "Alabaster",
+  "block.template-mod-121.alabaster_bricks": "Alabaster Bricks",
+  "block.template-mod-121.chiseled_alabaster": "Chiseled Alabaster",
 
   "item.template-mod-121.test_item": "Test Item",
+  "item.template-mod-121.fire_stone": "Fire Stone",
+  "item.template-mod-121.oil_bucket": "Oil Bucket",
+  "item.template-mod-121.metal_detector": "Metal Detector",
+
   "item.template-mod-121.tomato": "Tomato",
   "item.template-mod-121.tomato_seeds": "Tomato Seeds",
   "item.template-mod-121.tumeric": "Tumeric",
   "item.template-mod-121.tumeric_seeds": "Tumeric Seeds",
+  "item.template-mod-121.cotton": "Cotton",
+  "item.template-mod-121.cotton_seeds": "Cotton Seeds",
 
   "item.template-mod-121.adobe_ball": "Adobe Ball",
   "item.template-mod-121.unfired_adobe_brick": "Unfired Adobe Brick",
@@ -36,9 +73,9 @@
   "item.template-mod-121.sturdy_clay_ball": "Sturdy Clay Ball",
   "item.template-mod-121.sturdy_brick": "Sturdy Brick",
 
-  "item.template-mod-121.cotton": "Cotton",
-  "item.template-mod-121.cotton_seeds": "Cotton Seeds",
-
   "item.template-mod-121.lead_ingot": "Lead Ingot",
-  "item.template-mod-121.raw_lead": "Raw Lead"
+  "item.template-mod-121.raw_lead": "Raw Lead",
+
+  "item.template-mod-121.ruby": "Ruby",
+  "item.template-mod-121.raw_ruby": "Raw Ruby"
 }

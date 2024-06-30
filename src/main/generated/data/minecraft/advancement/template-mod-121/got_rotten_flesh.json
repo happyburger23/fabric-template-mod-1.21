@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:template-mod-121/root",
+  "criteria": {
+    "has_rotten_flesh": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:rotten_flesh"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain Rotten Flesh",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:rotten_flesh"
+    },
+    "title": "Why?"
+  },
+  "requirements": [
+    [
+      "has_rotten_flesh"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:template-mod-121/root",
+  "criteria": {
+    "got_red_mosaic": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:red_mosaic_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain Red Mosaic",
+    "icon": {
+      "count": 1,
+      "id": "template-mod-121:red_mosaic_block"
+    },
+    "title": "Mosaic Journey"
+  },
+  "requirements": [
+    [
+      "got_red_mosaic"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

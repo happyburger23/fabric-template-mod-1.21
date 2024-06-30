@@ -1,27 +1,75 @@
 package net.aiq9.datagen;
 
 import net.aiq9.blocks.ModBlocks;
+import net.aiq9.blocks.ModPlantBlocks;
+import net.aiq9.blocks.ModWallBlocks;
 import net.aiq9.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class RecipeDatagen extends FabricRecipeProvider {
+    private static final List<ItemConvertible> LEAD_SMELTABLES = List.of(ModItems.RAW_LEAD,
+            ModBlocks.LEAD_ORE, ModBlocks.DEEPSLATE_LEAD_ORE);
+
+    private static final List<ItemConvertible> RUBY_SMELTABLES = List.of(ModItems.RAW_RUBY,
+            ModBlocks.RUBY_ORE, ModBlocks.DEEPSLATE_RUBY_ORE, ModBlocks.NETHER_RUBY_ORE, ModBlocks.END_RUBY_ORE);
+
     public RecipeDatagen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
     @Override
     public void generate(RecipeExporter exporter) {
+        offerSmelting(exporter, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.LEAD_INGOT,
+                0.7f, 200, "lead");
+        offerBlasting(exporter, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.LEAD_INGOT,
+                0.7f, 100, "lead");
+
+        offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY,
+                0.7f, 200, "ruby");
+        offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY,
+                0.7f, 100, "ruby");
+
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.ROTTEN_FLESH, RecipeCategory.DECORATIONS,
                 ModBlocks.ROTTEN_FLESH_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_LEAD, RecipeCategory.DECORATIONS,
+                ModBlocks.RAW_LEAD_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.LEAD_INGOT, RecipeCategory.DECORATIONS,
+                ModBlocks.LEAD_BLOCK);
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUBY, RecipeCategory.DECORATIONS,
+                ModBlocks.RAW_RUBY_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS,
+                ModBlocks.RUBY_BLOCK);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModWallBlocks.ADOBE_BRICKS_WALL, ModBlocks.ADOBE_BRICK_BLOCK);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModWallBlocks.REFRACTORY_BRICKS_WALL, ModBlocks.REFRACTORY_BRICK_BLOCK);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModWallBlocks.STURDY_BRICKS_WALL, ModBlocks.STURDY_BRICK_BLOCK);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModWallBlocks.COBBLED_SANDSTONE_WALL, ModBlocks.COBBLED_SANDSTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModWallBlocks.CLOUD_STONE_BRICKS_WALL, ModBlocks.CLOUD_STONE_BRICKS);
+
+        //magenta dye from thistle block
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.MAGENTA_DYE, 1)
+                .input(ModPlantBlocks.THISTLE_BLOCK)
+                .criterion(hasItem(ModPlantBlocks.THISTLE_BLOCK), conditionsFromItem(Items.MAGENTA_DYE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.MAGENTA_DYE)));
+
+        //purple dye from monkshood block
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.PURPLE_DYE, 1)
+                .input(ModPlantBlocks.MONKSHOOD_BLOCK)
+                .criterion(hasItem(ModPlantBlocks.MONKSHOOD_BLOCK), conditionsFromItem(Items.PURPLE_DYE))
+                .offerTo(exporter, Identifier.of(getRecipeName(Items.PURPLE_DYE)));
 
         //Cloud Stone Bricks
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.CLOUD_STONE_BRICKS, 4)
@@ -33,7 +81,7 @@ public class RecipeDatagen extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.CLOUD_STONE_BRICKS)));
 
         //Wooden Casement
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WOODEN_CASEMENT)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WOODEN_CASEMENT, 8)
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
@@ -42,7 +90,7 @@ public class RecipeDatagen extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.WOODEN_CASEMENT)));
 
         //Wooden Casement Pane
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WOODEN_CASEMENT_PANE, 16)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WOODEN_CASEMENT_PANE, 8)
                 .pattern("   ")
                 .pattern("WWW")
                 .pattern("WWW")

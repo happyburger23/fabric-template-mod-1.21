@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "template-mod-121:block/cloud_stone_bricks"
+  }
+}

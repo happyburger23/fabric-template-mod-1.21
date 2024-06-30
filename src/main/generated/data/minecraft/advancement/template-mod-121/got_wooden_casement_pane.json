@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:template-mod-121/got_wooden_casement",
+  "criteria": {
+    "has_wood_casement_pane": {
+      "conditions": {
+        "items": [
+          {
+            "items": "template-mod-121:wooden_casement_pane"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain a Wooden Casement Pane",
+    "icon": {
+      "count": 1,
+      "id": "template-mod-121:wooden_casement_pane"
+    },
+    "title": "Fancier Window Panes"
+  },
+  "requirements": [
+    [
+      "has_wood_casement_pane"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

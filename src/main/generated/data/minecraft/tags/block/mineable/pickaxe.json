@@ -9,7 +9,26 @@
     "template-mod-121:adobe_bricks",
     "template-mod-121:refractory_bricks",
     "template-mod-121:sturdy_bricks",
-    "template-mod-121:lead_ore_block",
-    "template-mod-121:lead_block"
+    "template-mod-121:lead_ore",
+    "template-mod-121:deepslate_lead_ore",
+    "template-mod-121:lead_block",
+    "template-mod-121:raw_lead_block",
+    "template-mod-121:cobbled_sandstone_wall",
+    "template-mod-121:cloud_stone_bricks_wall",
+    "template-mod-121:adobe_bricks_wall",
+    "template-mod-121:refractory_bricks_wall",
+    "template-mod-121:sturdy_bricks_wall",
+    "template-mod-121:ruby_ore",
+    "template-mod-121:deepslate_ruby_ore",
+    "template-mod-121:nether_ruby_ore",
+    "template-mod-121:end_ruby_ore",
+    "template-mod-121:ruby_block",
+    "template-mod-121:raw_ruby_block",
+    "template-mod-121:slade",
+    "template-mod-121:slade_bricks",
+    "template-mod-121:chiseled_slade",
+    "template-mod-121:alabaster",
+    "template-mod-121:alabaster_bricks",
+    "template-mod-121:chiseled_alabaster"
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:template-mod-121/got_note_block",
+  "criteria": {
+    "has_jukebox": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:jukebox"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain a Juke Box",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:jukebox"
+    },
+    "title": "Juke it out!"
+  },
+  "requirements": [
+    [
+      "has_jukebox"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
