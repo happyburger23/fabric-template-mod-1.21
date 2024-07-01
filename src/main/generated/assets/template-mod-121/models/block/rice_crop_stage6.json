@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "template-mod-121:block/rice_crop_stage6"
+  }
+}

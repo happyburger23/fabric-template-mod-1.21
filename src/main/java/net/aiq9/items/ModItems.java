@@ -1,5 +1,6 @@
 package net.aiq9.items;
 
+import io.wispforest.lavender.book.LavenderBookItem;
 import net.aiq9.TemplateMod121;
 import net.aiq9.blocks.ModCropBlocks;
 import net.aiq9.items.custom.FireStoneItem;
@@ -16,6 +17,9 @@ public class ModItems {
 
     public static final Item TOMATO = new Item(new Item.Settings().food(ModFoodComponents.TOMATO));
     public static final Item TOMATO_SEEDS = new AliasedBlockItem(ModCropBlocks.TOMATO_CROP, new Item.Settings());
+
+    public static final Item RICE = new Item(new Item.Settings().food(ModFoodComponents.RICE));
+    public static final Item RICE_SEEDS = new AliasedBlockItem(ModCropBlocks.RICE_CROP, new Item.Settings());
 
     public static final Item ADOBE_BALL = new Item(new Item.Settings());
     public static final Item UNFIRED_ADOBE_BRICK = new Item(new Item.Settings());
@@ -40,6 +44,8 @@ public class ModItems {
     public static final Item OIL_BUCKET = new Item(new Item.Settings().maxCount(1)); //turn into BucketItem later.
     public static final Item METAL_DETECTOR = new MetalDetectorItem(new Item.Settings().maxCount(1));
 
+    //public static final Item TEST_BOOK = new LavenderBookItem(new Item.Settings().maxCount(1));
+
     public static void registerModItems() {
         TemplateMod121.LOGGER.info("Registering Mod Items for " + TemplateMod121.MOD_ID);
 
@@ -48,6 +54,9 @@ public class ModItems {
 
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "tomato"), TOMATO);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "tomato_seeds"), TOMATO_SEEDS);
+
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "rice"), RICE);
+        Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "rice_seeds"), RICE_SEEDS);
 
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "adobe_ball"), ADOBE_BALL);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "unfired_adobe_brick"), UNFIRED_ADOBE_BRICK);
@@ -71,5 +80,6 @@ public class ModItems {
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "fire_stone"), FIRE_STONE);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "oil_bucket"), OIL_BUCKET);
         Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "metal_detector"), METAL_DETECTOR);
+        //Registry.register(Registries.ITEM, Identifier.of(TemplateMod121.MOD_ID, "test_book"), TEST_BOOK);
     }
 }

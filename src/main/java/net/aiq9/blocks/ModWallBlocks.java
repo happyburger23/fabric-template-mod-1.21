@@ -16,6 +16,10 @@ public class ModWallBlocks {
             new WallBlock(AbstractBlock.Settings.copy(Blocks.SANDSTONE)));
     public static final Item COBBLED_SANDSTONE_WALL_ITEM = createBlockItem("cobbled_sandstone_wall", COBBLED_SANDSTONE_WALL);
 
+    public static final Block CLOUD_STONE_WALL = registerBlock("cloud_stone_wall",
+            new WallBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
+    public static final Item CLOUD_STONE_WALL_ITEM = createBlockItem("cloud_stone_wall", CLOUD_STONE_WALL);
+
     public static final Block CLOUD_STONE_BRICKS_WALL = registerBlock("cloud_stone_bricks_wall",
             new WallBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
     public static final Item CLOUD_STONE_BRICKS_WALL_ITEM = createBlockItem("cloud_stone_bricks_wall", CLOUD_STONE_BRICKS_WALL);

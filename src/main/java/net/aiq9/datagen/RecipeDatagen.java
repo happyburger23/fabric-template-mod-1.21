@@ -6,11 +6,13 @@ import net.aiq9.blocks.ModWallBlocks;
 import net.aiq9.items.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -40,6 +42,24 @@ public class RecipeDatagen extends FabricRecipeProvider {
                 0.7f, 200, "ruby");
         offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY,
                 0.7f, 100, "ruby");
+
+        //unfired adobe brick to fired adobe brick item
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.UNFIRED_ADOBE_BRICK), RecipeCategory.MISC, ModItems.FIRED_ADOBE_BRICK,
+                0.7f, 200)
+                .criterion(hasItem(ModItems.UNFIRED_ADOBE_BRICK), conditionsFromItem(ModItems.FIRED_ADOBE_BRICK))
+                .offerTo(exporter);
+
+        //refractory clay ball to refractory brick item
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.REFRACTORY_CLAY_BALL), RecipeCategory.MISC, ModItems.REFRACTORY_BRICK,
+                        0.7f, 200)
+                .criterion(hasItem(ModItems.REFRACTORY_CLAY_BALL), conditionsFromItem(ModItems.REFRACTORY_BRICK))
+                .offerTo(exporter);
+
+        //sturdy clay ball to sturdy brick item
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.STURDY_CLAY_BALL), RecipeCategory.MISC, ModItems.STURDY_BRICK,
+                        0.7f, 200)
+                .criterion(hasItem(ModItems.STURDY_CLAY_BALL), conditionsFromItem(ModItems.STURDY_BRICK))
+                .offerTo(exporter);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, Items.ROTTEN_FLESH, RecipeCategory.DECORATIONS,
                 ModBlocks.ROTTEN_FLESH_BLOCK);

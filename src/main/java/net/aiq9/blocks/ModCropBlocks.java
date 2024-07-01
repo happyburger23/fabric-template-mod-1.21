@@ -1,6 +1,7 @@
 package net.aiq9.blocks;
 
 import net.aiq9.TemplateMod121;
+import net.aiq9.blocks.custom.crop.RiceCropBlock;
 import net.aiq9.blocks.custom.crop.TomatoCropBlock;
 import net.aiq9.blocks.custom.crop.TumericCropBlock;
 import net.minecraft.block.AbstractBlock;
@@ -24,6 +25,10 @@ public class ModCropBlocks {
     public static final Block COTTON_CROP = registerBlock("cotton_crop",
             new TomatoCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     public static final Item COTTON_CROP_ITEM = createBlockItem("cotton_crop", COTTON_CROP);
+
+    public static final Block RICE_CROP = registerBlock("rice_crop",
+            new RiceCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+    public static final Item RICE_CROP_ITEM = createBlockItem("rice_crop", RICE_CROP);
 
     ///---------------
 

@@ -1,9 +1,7 @@
 package net.aiq9.datagen;
 
-import net.aiq9.blocks.ModBlocks;
-import net.aiq9.blocks.ModPlantBlocks;
-import net.aiq9.blocks.ModCropBlocks;
-import net.aiq9.blocks.ModWallBlocks;
+import net.aiq9.blocks.*;
+import net.aiq9.blocks.custom.crop.RiceCropBlock;
 import net.aiq9.blocks.custom.crop.TomatoCropBlock;
 import net.aiq9.blocks.custom.crop.TumericCropBlock;
 import net.aiq9.items.ModItems;
@@ -23,7 +21,6 @@ public class BlockItemModelDatagen extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_MOSAIC_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_MOSAIC_BLOCK);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CLOUD_STONE);
         blockStateModelGenerator.registerGlassPane(ModBlocks.WOODEN_CASEMENT, ModBlocks.WOODEN_CASEMENT_PANE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_FALLING_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROTTEN_FLESH_BLOCK);
@@ -59,29 +56,38 @@ public class BlockItemModelDatagen extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModCropBlocks.TUMERIC_CROP, TumericCropBlock.AGE, 0, 1);
         blockStateModelGenerator.registerCrop(ModCropBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerCrop(ModCropBlocks.COTTON_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerCrop(ModCropBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModPlantBlocks.THISTLE_BLOCK, ModPlantBlocks.POTTED_THISTLE_BLOCK, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModPlantBlocks.MONKSHOOD_BLOCK, ModPlantBlocks.POTTED_MONKSHOOD_BLOCK, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        //cobbled sandstone
+        //cobbled sandstone - Walls, stairs, slabs
         BlockStateModelGenerator.BlockTexturePool cobbledSandstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COBBLED_SANDSTONE);
         cobbledSandstonePool.wall(ModWallBlocks.COBBLED_SANDSTONE_WALL);
+        cobbledSandstonePool.stairs(ModStairBlocks.COBBLED_SANDSTONE_STAIRS);
 
-        //cloud stone
-        BlockStateModelGenerator.BlockTexturePool cloudStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CLOUD_STONE_BRICKS);
-        cloudStonePool.wall(ModWallBlocks.CLOUD_STONE_BRICKS_WALL);
+        //cloud stone - walls, stairs, slabs
+        BlockStateModelGenerator.BlockTexturePool cloudStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CLOUD_STONE);
+        cloudStonePool.wall(ModWallBlocks.CLOUD_STONE_WALL);
+        cloudStonePool.stairs(ModStairBlocks.CLOUD_STONE_STAIRS);
 
-        //adobe bricks
+        //cloud stone bricks - Walls, stairs, slabs
+        BlockStateModelGenerator.BlockTexturePool cloudStoneBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CLOUD_STONE_BRICKS);
+        cloudStoneBricksPool.wall(ModWallBlocks.CLOUD_STONE_BRICKS_WALL);
+        cloudStoneBricksPool.stairs(ModStairBlocks.CLOUD_STONE_BRICKS_STAIRS);
+
+        //adobe bricks - Walls, stairs, slabs
         BlockStateModelGenerator.BlockTexturePool adobePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ADOBE_BRICK_BLOCK);
         adobePool.wall(ModWallBlocks.ADOBE_BRICKS_WALL);
 
-        //refractory bricks
+        //refractory bricks - Walls, stairs, slabs
         BlockStateModelGenerator.BlockTexturePool refractoryBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.REFRACTORY_BRICK_BLOCK);
         refractoryBricksPool.wall(ModWallBlocks.REFRACTORY_BRICKS_WALL);
 
-        //sturdy bricks
+        //sturdy bricks - Walls, stairs, slabs
         BlockStateModelGenerator.BlockTexturePool sturdyBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STURDY_BRICK_BLOCK);
         sturdyBricksPool.wall(ModWallBlocks.STURDY_BRICKS_WALL);
+
     }
 
     @Override
@@ -100,6 +106,7 @@ public class BlockItemModelDatagen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STURDY_BRICK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.COTTON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RICE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.LEAD_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_LEAD, Models.GENERATED);
@@ -110,5 +117,6 @@ public class BlockItemModelDatagen extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FIRE_STONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.OIL_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.HANDHELD);
+        //itemModelGenerator.register(ModItems.TEST_BOOK, Models.HANDHELD);
     }
 }

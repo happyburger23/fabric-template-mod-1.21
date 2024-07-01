@@ -1,4 +1,4 @@
-// 1.21	2024-06-30T19:01:40.358759	Template Mod 1.21/Recipes
+// 1.21	2024-07-01T15:48:22.093801	Template Mod 1.21/Recipes
 49f64e572e8f51d9f7ec8bf8befedf175f1d36a1 data/template-mod-121/recipe/raw_lead.json
 991d9c93eeb546d437657c4b926aa1f0e34b16a7 data/template-mod-121/recipe/raw_lead_block.json
 e86232c13e604aa03432d415ee07f90d6a100a10 data/template-mod-121/recipe/lead_ingot_from_blasting_lead_ore.json
@@ -7,6 +7,7 @@ e86232c13e604aa03432d415ee07f90d6a100a10 data/template-mod-121/recipe/lead_ingot
 cbdcd847a4970daff55a4e90485ae023edefaa21 data/template-mod-121/recipe/ruby_from_smelting_end_ruby_ore.json
 604e0f38e3803bf367e699b90b6b0490e756c13a data/template-mod-121/recipe/ruby_from_smelting_deepslate_ruby_ore.json
 e2aea8fa7cb8b106bafba65c3ade99c571acf982 data/template-mod-121/advancement/recipes/misc/lead_ingot_from_smelting_raw_lead.json
+788c8ae4bf3bcf21d78a8cf920b249df87b44035 data/template-mod-121/advancement/recipes/misc/refractory_brick.json
 0c3f4495e9bef668a4290f0b6ccb75595e24220e data/template-mod-121/recipe/lead_ingot.json
 4e283a40fb941e58f91cb1d6dac8a2ce1cdd656c data/template-mod-121/advancement/recipes/misc/lead_ingot_from_blasting_lead_ore.json
 cac2608cc3ef2a088b5e764dff8c8e95c1781145 data/template-mod-121/recipe/ruby_from_blasting_end_ruby_ore.json
@@ -17,6 +18,7 @@ a42bf593235c5ad4c654a3cc3c373d7844f04e7e data/template-mod-121/advancement/recip
 38a4c1084a14da82e8f3fff4c8205701c6c4f796 data/template-mod-121/advancement/recipes/misc/ruby_from_blasting_end_ruby_ore.json
 8ccc8bd2eafd0c73dfc5df6aa1b0c7fb3f8e6ab5 data/template-mod-121/advancement/recipes/misc/ruby_from_smelting_deepslate_ruby_ore.json
 ee9dcf94f61e568cb1d32e796849a146934d12fe data/template-mod-121/advancement/recipes/misc/ruby_from_blasting_ruby_ore.json
+150b4aaf7e0e817cf97cde6073e874851e9ef51b data/template-mod-121/advancement/recipes/misc/fired_adobe_brick.json
 af6b8b164c3a94d7bc637c74b98f14da84ff0886 data/template-mod-121/recipe/sturdy_bricks_wall.json
 ce8f7b5eb0a1a6c1e6f3539bff176fb31eb83c77 data/template-mod-121/advancement/recipes/decorations/ruby_block.json
 2710dc82b9dd1ffbd627e0c6814b022ffeb3947b data/template-mod-121/advancement/recipes/building_blocks/sturdy_bricks_wall.json
@@ -25,6 +27,7 @@ b1459d35382b0c1c977d6305c7131ee288f10c63 data/template-mod-121/recipe/ruby_from_
 5fdb559a66f2171c15635c11cd8192b8d8dd4f88 data/template-mod-121/advancement/recipes/building_blocks/cobbled_sandstone_wall.json
 fa1dca82a4aae69f594750ce436fc373e4e2f11f data/template-mod-121/recipe/rotten_flesh.json
 76fa955f50f3eceb6d5a80c8878ac5970ebd68e7 data/template-mod-121/advancement/recipes/building_blocks/adobe_bricks.json
+9b635ceeaaf7bbb5c7cee3631199e4b0d16c9981 data/template-mod-121/recipe/refractory_brick.json
 a79f4d4e9c108f50392fed32040fc602b6851c76 data/template-mod-121/advancement/recipes/decorations/raw_ruby_block.json
 4c6b51a1faf1aeef825cdb4328956ad9e8647918 data/template-mod-121/recipe/ruby_from_blasting_raw_ruby.json
 76dfe6bb53e25ea10cb9d741a4d670e96499a683 data/template-mod-121/recipe/note_block_rail.json
@@ -51,6 +54,7 @@ e76d5bbfff7e7fdca63f9cf90ee2b54266070437 data/template-mod-121/recipe/lead_ingot
 374d507c75c1e4bb472a2b45793bb4898d8247ad data/template-mod-121/recipe/adobe_bricks.json
 2183a49941b3c92cdec1629db00e590d0f0b0cc5 data/template-mod-121/recipe/refractory_bricks_wall.json
 01dd7920c0cc6a0c4824f2935355984a1fdd3753 data/template-mod-121/advancement/recipes/building_blocks/wooden_casement_pane.json
+d7bad6e991d411640cfb8cd43e4936451b88949b data/template-mod-121/advancement/recipes/misc/sturdy_brick.json
 47872daeadbef1aaf4734207a15b7c24b5bdf557 data/template-mod-121/advancement/recipes/building_blocks/lead_ingot.json
 ada9db8d6317fc4cddbf30e36d5cbd2428240288 data/template-mod-121/advancement/recipes/decorations/lead_block.json
 d7efbe4be1257d2b3f09b0f0055a6befc2aa6d12 data/template-mod-121/advancement/recipes/misc/unfired_adobe_brick.json
@@ -75,9 +79,11 @@ eba4d1ccb172b959bc68ba179c5c32bfe5948779 data/template-mod-121/advancement/recip
 46331699bdfc2a48dd54f73ad96e58959a04cb97 data/template-mod-121/recipe/cloud_stone_bricks_wall.json
 46a1341cf5cc9ed8fa845c35f410b2ad114a2d48 data/template-mod-121/advancement/recipes/building_blocks/magenta_dye.json
 fb1aea03c3469fa4b408c9dd332f0cd6856960aa data/template-mod-121/recipe/ruby_from_blasting_deepslate_ruby_ore.json
+d2a2f7e7a4ae4bcb55fb7e005ffcf9a9758d3bb4 data/template-mod-121/recipe/sturdy_brick.json
 f4014eef16d52b79bcfc16165821620a3958ab68 data/template-mod-121/recipe/rotten_flesh_block.json
 e53f6bb49ff4721df5033521f6153a7cd1139cf9 data/template-mod-121/recipe/cloud_stone_bricks.json
 396c0fbe5a7a83579b1653e3fe91c467e5944a51 data/template-mod-121/recipe/cobbled_sandstone_wall.json
 f17a9841efc5b40bfec8f67af67de7b215cd0f46 data/template-mod-121/advancement/recipes/building_blocks/cloud_stone_bricks_wall.json
 a029830013579e1b24f0a79737cb3dc01ef2725e data/template-mod-121/advancement/recipes/misc/ruby_from_smelting_ruby_ore.json
+2a73c9b592917e898459334b826ef5663f042156 data/template-mod-121/recipe/fired_adobe_brick.json
 a42a3226388d7c33452e92f525eb8e126df7dca8 data/template-mod-121/recipe/raw_ruby_block.json

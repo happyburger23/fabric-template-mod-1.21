@@ -1,9 +1,6 @@
 package net.aiq9.datagen;
 
-import net.aiq9.blocks.ModBlocks;
-import net.aiq9.blocks.ModPlantBlocks;
-import net.aiq9.blocks.ModCropBlocks;
-import net.aiq9.blocks.ModWallBlocks;
+import net.aiq9.blocks.*;
 import net.aiq9.util.CustomTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -28,22 +25,34 @@ public class BlockTagDatagen extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RED_MOSAIC_BLOCK)
                 .add(ModBlocks.BLUE_MOSAIC_BLOCK)
-                .add(ModBlocks.COBBLED_SANDSTONE)
-                .add(ModBlocks.CLOUD_STONE)
-                .add(ModBlocks.CLOUD_STONE_BRICKS)
                 .add(ModBlocks.NOTE_BLOCK_RAIL)
+
+                .add(ModBlocks.COBBLED_SANDSTONE)
+                .add(ModWallBlocks.COBBLED_SANDSTONE_WALL)
+                .add(ModStairBlocks.COBBLED_SANDSTONE_STAIRS)
+
+                .add(ModBlocks.CLOUD_STONE)
+                .add(ModWallBlocks.CLOUD_STONE_WALL)
+                .add(ModStairBlocks.CLOUD_STONE_STAIRS)
+
+                .add(ModBlocks.CLOUD_STONE_BRICKS)
+                .add(ModWallBlocks.CLOUD_STONE_BRICKS_WALL)
+                .add(ModStairBlocks.CLOUD_STONE_BRICKS_STAIRS)
+
                 .add(ModBlocks.ADOBE_BRICK_BLOCK)
+                .add(ModWallBlocks.ADOBE_BRICKS_WALL)
+
                 .add(ModBlocks.REFRACTORY_BRICK_BLOCK)
+                .add(ModWallBlocks.REFRACTORY_BRICKS_WALL)
+
                 .add(ModBlocks.STURDY_BRICK_BLOCK)
+                .add(ModWallBlocks.STURDY_BRICKS_WALL)
+
                 .add(ModBlocks.LEAD_ORE)
                 .add(ModBlocks.DEEPSLATE_LEAD_ORE)
                 .add(ModBlocks.LEAD_BLOCK)
                 .add(ModBlocks.RAW_LEAD_BLOCK)
-                .add(ModWallBlocks.COBBLED_SANDSTONE_WALL)
-                .add(ModWallBlocks.CLOUD_STONE_BRICKS_WALL)
-                .add(ModWallBlocks.ADOBE_BRICKS_WALL)
-                .add(ModWallBlocks.REFRACTORY_BRICKS_WALL)
-                .add(ModWallBlocks.STURDY_BRICKS_WALL)
+
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE)
                 .add(ModBlocks.NETHER_RUBY_ORE)
@@ -65,7 +74,8 @@ public class BlockTagDatagen extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.CROPS)
                 .add(ModCropBlocks.TUMERIC_CROP)
                 .add(ModCropBlocks.TOMATO_CROP)
-                .add(ModCropBlocks.COTTON_CROP);
+                .add(ModCropBlocks.COTTON_CROP)
+                .add(ModCropBlocks.RICE_CROP);
 
         getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
                 .add(ModPlantBlocks.THISTLE_BLOCK)
@@ -74,7 +84,8 @@ public class BlockTagDatagen extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.BEE_GROWABLES)
                 .add(ModCropBlocks.TUMERIC_CROP)
                 .add(ModCropBlocks.TOMATO_CROP)
-                .add(ModCropBlocks.COTTON_CROP);
+                .add(ModCropBlocks.COTTON_CROP)
+                .add(ModCropBlocks.RICE_CROP);
 
         getOrCreateTagBuilder(BlockTags.RAILS)
                 .add(ModBlocks.NOTE_BLOCK_RAIL);

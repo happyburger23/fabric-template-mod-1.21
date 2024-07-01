@@ -1,9 +1,7 @@
 package net.aiq9.datagen;
 
-import net.aiq9.blocks.ModBlocks;
-import net.aiq9.blocks.ModPlantBlocks;
-import net.aiq9.blocks.ModWallBlocks;
-import net.aiq9.blocks.ModCropBlocks;
+import net.aiq9.blocks.*;
+import net.aiq9.blocks.custom.crop.RiceCropBlock;
 import net.aiq9.blocks.custom.crop.TomatoCropBlock;
 import net.aiq9.blocks.custom.crop.TumericCropBlock;
 import net.aiq9.items.ModItems;
@@ -35,19 +33,36 @@ public class LoottableDatagen extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TEST_BLOCK);
         addDrop(ModBlocks.RED_MOSAIC_BLOCK);
         addDrop(ModBlocks.BLUE_MOSAIC_BLOCK);
+
         addDrop(ModBlocks.COBBLED_SANDSTONE);
         addDrop(ModBlocks.CLOUD_STONE);
         addDrop(ModBlocks.CLOUD_STONE_BRICKS);
+
+        //walls
+        addDrop(ModWallBlocks.COBBLED_SANDSTONE_WALL);
+        addDrop(ModWallBlocks.CLOUD_STONE_BRICKS_WALL);
+        addDrop(ModWallBlocks.ADOBE_BRICKS_WALL);
+        addDrop(ModWallBlocks.REFRACTORY_BRICKS_WALL);
+        addDrop(ModWallBlocks.STURDY_BRICKS_WALL);
+
+        //stairs
+        addDrop(ModStairBlocks.COBBLED_SANDSTONE_STAIRS);
+        addDrop(ModStairBlocks.CLOUD_STONE_STAIRS);
+        addDrop(ModStairBlocks.CLOUD_STONE_BRICKS_STAIRS);
+
         addDrop(ModBlocks.NOTE_BLOCK_RAIL);
         addDrop(ModBlocks.WOODEN_CASEMENT);
         addDrop(ModBlocks.WOODEN_CASEMENT_PANE);
         addDrop(ModBlocks.TEST_FALLING_BLOCK);
         addDrop(ModBlocks.ROTTEN_FLESH_BLOCK);
-        addDrop(ModBlocks.ADOBE_BRICK_BLOCK);
-        addDrop(ModBlocks.REFRACTORY_BRICK_BLOCK);
-        addDrop(ModBlocks.STURDY_BRICK_BLOCK);
         addDrop(ModBlocks.CARDBOARD_BOX);
         addDrop(ModBlocks.SOUND_BLOCK);
+
+        addDrop(ModBlocks.ADOBE_BRICK_BLOCK);
+
+        addDrop(ModBlocks.REFRACTORY_BRICK_BLOCK);
+
+        addDrop(ModBlocks.STURDY_BRICK_BLOCK);
 
         addDrop(ModBlocks.SLADE_BLOCK);
         addDrop(ModBlocks.SLADE_BRICKS);
@@ -63,13 +78,6 @@ public class LoottableDatagen extends FabricBlockLootTableProvider {
 
         addDrop(ModPlantBlocks.MONKSHOOD_BLOCK);
         addPottedPlantDrops(ModPlantBlocks.POTTED_MONKSHOOD_BLOCK);
-
-        //walls
-        addDrop(ModWallBlocks.COBBLED_SANDSTONE_WALL);
-        addDrop(ModWallBlocks.CLOUD_STONE_BRICKS_WALL);
-        addDrop(ModWallBlocks.ADOBE_BRICKS_WALL);
-        addDrop(ModWallBlocks.REFRACTORY_BRICKS_WALL);
-        addDrop(ModWallBlocks.STURDY_BRICKS_WALL);
 
         //lead
         addDrop(ModBlocks.LEAD_BLOCK);
@@ -99,6 +107,11 @@ public class LoottableDatagen extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder cottonBuilder = BlockStatePropertyLootCondition.builder(ModCropBlocks.COTTON_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(TomatoCropBlock.AGE, 5));
         addDrop(ModCropBlocks.COTTON_CROP, cropDrops(ModCropBlocks.COTTON_CROP, ModItems.COTTON, ModItems.COTTON_SEEDS, cottonBuilder));
+
+        //rice crop
+        BlockStatePropertyLootCondition.Builder riceBuilder = BlockStatePropertyLootCondition.builder(ModCropBlocks.RICE_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(RiceCropBlock.AGE, 7));
+        addDrop(ModCropBlocks.RICE_CROP, cropDrops(ModCropBlocks.RICE_CROP, ModItems.RICE, ModItems.RICE_SEEDS, riceBuilder));
     }
 
 

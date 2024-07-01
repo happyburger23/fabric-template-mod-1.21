@@ -13,6 +13,7 @@ public class TemplateMod121Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModCropBlocks.TUMERIC_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModCropBlocks.TOMATO_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModCropBlocks.COTTON_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModCropBlocks.RICE_CROP, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NOTE_BLOCK_RAIL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WOODEN_CASEMENT, RenderLayer.getCutout());

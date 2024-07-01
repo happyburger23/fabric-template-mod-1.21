@@ -1,10 +1,10 @@
-// 1.21	2024-06-30T19:01:40.36157	Template Mod 1.21/Tags for minecraft:block
+// 1.21	2024-07-01T15:48:22.096719	Template Mod 1.21/Tags for minecraft:block
 69397195b0461d2d661f3b1ca1878a22617c14f7 data/minecraft/tags/block/walls.json
-401cc905df44fe13fb79bd6a64abbc241c29c7af data/minecraft/tags/block/crops.json
+56635fc8a833d223f7998393abfadaf30e3bd4f4 data/minecraft/tags/block/crops.json
+762c867ef50eb84d8247ea0e653b565791f11677 data/minecraft/tags/block/mineable/pickaxe.json
 838d226c1063edd73f172f52ed15867c1e2252ad data/minecraft/tags/block/rails.json
-2d9793ec6d7b88954831039cb9585913213b607f data/minecraft/tags/block/mineable/pickaxe.json
 f3644c1e8fc45399c9017abf2deb487d30cfd9d7 data/minecraft/tags/block/mineable/axe.json
 f70a994f4e218ad4de5307945ee0113ca01da726 data/minecraft/tags/block/mineable/hoe.json
-401cc905df44fe13fb79bd6a64abbc241c29c7af data/minecraft/tags/block/bee_growables.json
+56635fc8a833d223f7998393abfadaf30e3bd4f4 data/minecraft/tags/block/bee_growables.json
 d6d02bda48983aa3697a6a0c2bd173016b0c6323 data/template-mod-121/tags/block/metal_detector_detectable_blocks.json
 907865d15ea01e1c7bdc2ade92a693e52ce88188 data/minecraft/tags/block/small_flowers.json

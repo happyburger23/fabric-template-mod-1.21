@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,
-  "experience": 0.3,
+  "experience": 0.7,
   "ingredient": {
     "item": "template-mod-121:sturdy_clay_ball"
   },

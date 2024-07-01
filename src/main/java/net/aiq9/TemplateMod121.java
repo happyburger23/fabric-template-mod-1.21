@@ -1,9 +1,6 @@
 package net.aiq9;
 
-import net.aiq9.blocks.ModPlantBlocks;
-import net.aiq9.blocks.ModCropBlocks;
-import net.aiq9.blocks.ModBlocks;
-import net.aiq9.blocks.ModWallBlocks;
+import net.aiq9.blocks.*;
 import net.aiq9.items.ModItemGroup;
 import net.aiq9.items.ModItems;
 import net.aiq9.sounds.ModSounds;
@@ -23,6 +20,8 @@ public class TemplateMod121 implements ModInitializer {
 		ModItemGroup.registerItemGroup();
 		ModBlocks.registerModBlocks();
 		ModWallBlocks.registerModWallBlocks();
+		ModStairBlocks.registerModStairBlocks();
+
 		ModCropBlocks.registerModCropBlocks();
 		ModPlantBlocks.registerModPlantBlocks();
 		ModItems.registerModItems();

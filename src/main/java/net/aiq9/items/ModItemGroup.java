@@ -3,6 +3,7 @@ package net.aiq9.items;
 import net.aiq9.TemplateMod121;
 import net.aiq9.blocks.ModBlocks;
 import net.aiq9.blocks.ModPlantBlocks;
+import net.aiq9.blocks.ModStairBlocks;
 import net.aiq9.blocks.ModWallBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -29,9 +30,15 @@ public class ModItemGroup {
 
                         entries.add(ModBlocks.COBBLED_SANDSTONE);
                         entries.add(ModWallBlocks.COBBLED_SANDSTONE_WALL);
+                        entries.add(ModStairBlocks.COBBLED_SANDSTONE_STAIRS);
 
                         entries.add(ModBlocks.CLOUD_STONE);
+                        entries.add(ModWallBlocks.CLOUD_STONE_WALL);
+                        entries.add(ModStairBlocks.CLOUD_STONE_STAIRS);
+
                         entries.add(ModBlocks.CLOUD_STONE_BRICKS);
+                        entries.add(ModWallBlocks.CLOUD_STONE_BRICKS_WALL);
+                        entries.add(ModStairBlocks.CLOUD_STONE_BRICKS_STAIRS);
 
                         entries.add(ModBlocks.ADOBE_BRICK_BLOCK);
                         entries.add(ModWallBlocks.ADOBE_BRICKS_WALL);
@@ -86,6 +93,9 @@ public class ModItemGroup {
                         entries.add(ModItems.COTTON_SEEDS);
                         entries.add(ModItems.COTTON);
 
+                        entries.add(ModItems.RICE_SEEDS);
+                        entries.add(ModItems.RICE);
+
                         entries.add(ModItems.ADOBE_BALL);
                         entries.add(ModItems.UNFIRED_ADOBE_BRICK);
 
@@ -98,6 +108,7 @@ public class ModItemGroup {
                         entries.add(ModItems.OIL_BUCKET);
                         entries.add(ModItems.FIRE_STONE);
                         entries.add(ModItems.METAL_DETECTOR);
+                        //entries.add(ModItems.TEST_BOOK);
                     }).build());
 
     public static void registerItemGroup() {

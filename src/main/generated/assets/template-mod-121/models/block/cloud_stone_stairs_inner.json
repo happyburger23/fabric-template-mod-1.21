@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "template-mod-121:block/cloud_stone",
+    "side": "template-mod-121:block/cloud_stone",
+    "top": "template-mod-121:block/cloud_stone"
+  }
+}

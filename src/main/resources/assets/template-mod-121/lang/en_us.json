@@ -25,8 +25,13 @@
   "block.template-mod-121.monkshood": "Monkshood",
   "block.template-mod-121.potted_monkshood": "Potted Monkshood",
 
+  "block.template-mod-121.cobbled_sandstone_stairs": "Cobbled Sandstone Stairs",
+  "block.template-mod-121.cloud_stone_stairs": "Cloud Stone Stairs",
+  "block.template-mod-121.cloud_stone_bricks_stairs": "Cloud Stone Bricks Stairs",
+
   "block.template-mod-121.cobbled_sandstone_wall": "Cobbled Sandstone Wall",
-  "block.template-mod-121.cloud_stone_bricks_wall": "Cloud Stone Wall",
+  "block.template-mod-121.cloud_stone_wall": "Cloud Stone Wall",
+  "block.template-mod-121.cloud_stone_bricks_wall": "Cloud Stone Bricks Wall",
   "block.template-mod-121.adobe_bricks_wall": "Adobe Bricks Wall",
   "block.template-mod-121.refractory_bricks_wall": "Refractory Bricks Wall",
   "block.template-mod-121.sturdy_bricks_wall": "Sturdy Bricks Wall",
@@ -62,6 +67,8 @@
   "item.template-mod-121.tumeric_seeds": "Tumeric Seeds",
   "item.template-mod-121.cotton": "Cotton",
   "item.template-mod-121.cotton_seeds": "Cotton Seeds",
+  "item.template-mod-121.rice": "Rice",
+  "item.template-mod-121.rice_seeds": "Rice Seeds",
 
   "item.template-mod-121.adobe_ball": "Adobe Ball",
   "item.template-mod-121.unfired_adobe_brick": "Unfired Adobe Brick",
